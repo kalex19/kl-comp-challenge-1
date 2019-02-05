@@ -3,17 +3,17 @@
 }
 
 body {
-  font-family: fantasy;
   background-color: #b3cffc;
-  margin: 0%;
+  font-family: fantasy;
+  margin: 0;
 }
 
 /*Header Styling*/
 
 header {
   background-color: #fff;
-  width: 100%;
   padding: 1.5em;
+  width: 100%;
 }
 
 .nav-container {
@@ -31,20 +31,20 @@ header {
 /*Left Menu Styling*/
 
 .left-menu {
+  align-items: flex-end;
   display: flex;
   height: 100%;
-  align-items: flex-end;
 }
 
 .left-menu i {
-  padding-right: 1em;
   font-size: 1.5em;
+  padding-right: 1em;
 }
 
 .left-menu h2 {
+  line-height: 1;
   margin: 0;
   padding-right: 1em;
-  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -69,160 +69,208 @@ a:hover {
 }
 
 .right-menu span {
-  position: relative;
   padding-right: 1em;
+  position: relative;
 }
 
 .right-menu span::after {
- content: "";
- border-left: 5px solid transparent;
- border-right: 5px solid transparent;
- border-top: 10px solid #000;
- position: absolute;
- right: 0;
- margin-right: -8px;
- top: 6px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #000;
+  content: "";
+  margin-right: -8px;
+  position: absolute;
+  right: 0;
+  top: 6px;
 }
 
 .logo-container {
-  width: 80%;
   text-align: right;
+  width: 80%;
 }
 .logo {
+  border-radius: 30%;
   width: 85%;
-  border-radius: 30%
 }
 
 /*Main Body*/
-.main-content{
+
+.main-content {
   padding: 0 1.5em;
 }
 
 h1 {
+  color: #000;
   font-size: 3em;
   margin: 1% 0;
-  color: #000;
 }
 
 .all-card-container {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
+  min-width: 2px;
+  width: 100%;
 }
 
-/* #region start Card Styles */
+/* Card Styles */
 
 .card-container {
   background-color: #fff;
+  margin: 1%;
   width: 23%;
 }
 
-#boxshadow {
-  position: relative;
+#box-shadow {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
   padding: 10px;
+  position: relative;
 }
-
-/* #endregion start Card Styles */
-
 
 /*Card Images and Styling*/
 
-.cardImage1 {
+.card-image1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Mind01.jpeg");
 }
-.cardImage2 {
+
+.card-image2 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Body01.jpeg");
 }
-.cardImage3 {
+
+.card-image3 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Spirit01.jpeg");
 }
-.cardImage4 {
+
+.card-image4 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Mind02.jpeg");
 }
-.cardImage5 {
+
+.card-image5 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Body02.jpeg");
 }
-.cardImage6 {
+
+.card-image6 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Spirit02.jpeg");
 }
-.cardImage7 {
+
+.card-image7 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Mind03.jpeg");
 }
-.cardImage8 {
+
+.card-image8 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Body03.jpeg");
 }
 
-.card-image{
+.card-image {
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
   display: flex;
   flex-wrap: wrap;
+  height: 195px;
   margin: 2%;
   padding: 7% 6%;
   width: 95%;
-  height: 195px;
-  color: #fff;
 }
-.icon-text{
+
+.icon-text {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
 
+.icon-text h3 {
+  margin: 1%;
+  padding: 4%;
+  text-align: left;font-size: 1em;
+}
+
 /*Card Content Styling*/
 
-h3, h2, p, img {
-  padding: 0%;
-  margin: 0%;
+h3,h2, p, img {
+  margin: 0;
+  padding: 0;
   text-align: left;
 }
 
 .card-content {
-  width: 100%;
-  margin: 2%;
-  padding: 2%;
   display: flex;
   flex-wrap: wrap;
+  margin: 2%;
+  padding: 2%;
+  width: 100%;
 }
 
-.button{
+.button {
   margin: 2%;
 }
 
 
 button {
   background-color: #b3cffc;
-  width: 90%;
   height: 2%;
   margin: 0;
   padding: 5%;
+  width: 90%;
 }
 
-.card-content-bottom{
+.card-content-bottom {
   box-shadow: solid 1em #000;
-  width: 100%;
+  display: inline-block;
   margin: 4%;
   padding: 2%;
-  display: inline-block;
+  width: 100%;
 }
 
 
 /*Media Queries*/
 
 
-/*media query 900
-.card-container{
-      width: 48%;
-    margin: 1%;
+@media screen and (max-width: 895px) {
+  .right-nav {
+    min-width: 2px;
+  }
+
 }
 
-.all-card-container{
-      display: flex;
-    width: 100%;
-    justify-content: space-between;
+@media screen and (max-width: 772px) {
+  .all-content-container {
+    display: flex;
     flex-wrap: wrap;
-    }*/
+    justify-content: space-between;
+    min-width: 10px;
+    width: 100%;
+  }
 
-    
+}
+
+@media screen and (max-width: 650px) {
+  .left-menu {
+    align-items: flex;
+    display: block;
+    height: 100%;
+  }
+
+  .card-container {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 2px;
+    width: 29%;
+  }
+
+  @media screen and (max-width: 500px){
+
+    .card-container {
+      display: block;
+      justify-content: space-between;
+      min-width: 2px;
+      width: 100%;
+    }
+  }
+
+
+
+
+
