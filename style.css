@@ -1,129 +1,132 @@
 * {
   box-sizing: border-box;
 }
+
 body {
-  font-family: sans-serif;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  font-family: fantasy;
+  background-color: #b3cffc;
   margin: 0%;
 }
+
+/*Header Styling*/
+
 header {
-  display: inherit;
-  /* flex-wrap: wrap; */
-  background-color: #D47EF1;
+  background-color: #fff;
   width: 100%;
   padding: 1.5em;
 }
+
 .nav-container {
-display: flex;
-
+  display: flex;
 }
 
-.left-nav{
-flex:4;
+.left-nav {
+  flex: 4;
 }
 
-.left-nav h2 {
-    padding: 0;
-    margin: 0;
-    padding-right: 1em;
-    line-height: 1;
-    text-transform: uppercase;
+.right-nav {
+  flex: 1;
+}
+
+/*Left Menu Styling*/
+
+.left-menu {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.left-menu i {
+  padding-right: 1em;
+  font-size: 1.5em;
+}
+
+.left-menu h2 {
+  margin: 0;
+  padding-right: 1em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #7ba9f2;
+  color: #fff;
+}
+
+/*Right Menu Styling*/
+
+.right-menu {
+  display: flex;
+}
+
+.right-menu i {
+  padding-right: 1em;
+}
+
+.right-menu span {
+  position: relative;
+  padding-right: 1em;
+}
+
+.right-menu span::after {
+ content: "";
+ border-left: 5px solid transparent;
+ border-right: 5px solid transparent;
+ border-top: 10px solid #000;
+ position: absolute;
+ right: 0;
+ margin-right: -8px;
+ top: 6px;
 }
 
 .logo-container {
-    width: 100%;
-    text-align: right;
+  width: 80%;
+  text-align: right;
 }
 .logo {
-    margin: 0;
-    width: 75%;
-    padding: 0;
+  width: 85%;
+  border-radius: 30%
 }
 
-.right-nav{
-
-flex: 1;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-
-}
-
-.menu {
-    display: flex;
-    height: 100%;
-    /* vertical-align: bottom; */
-    align-items: flex-end;
-}
-
-.menu i {
-      padding-right: 1em;
-    font-size: 1.5em;
-}
-
-.sign-in {
-  display: flex;
-  padding-bottom: 1em;
-}
-
-.sign-in i {
-      padding-right: 1em;
-}
-
-.sign-in span {
-position: relative;
-}
-
-.sign-in span::after {
-   content: "";
-   width: 0;
-   height: 0;
-   border-left: 5px solid transparent;
-   border-right: 5px solid transparent;
-   border-top: 8px solid #546375;
-   position: absolute;
-   right: 0;
-   margin-right: -8px;
-   top: 6px;
-   border-radius: 1px;
-}
-
-
-
-
-nav, h1 {
-  color: #000;
+/*Main Body*/
+.main-content{
+  padding: 0 1.5em;
 }
 
 h1 {
-    font-size: 3em;
-    margin: 1% 0;
+  font-size: 3em;
+  margin: 1% 0;
+  color: #000;
 }
-
-.main-content{
-    padding: 0 1.5em;
-}
-
-/* #region start Card Styles */
 
 .all-card-container {
   display: flex;
   width: 100%;
-      justify-content: space-between;
+  justify-content: space-between;
 }
+
+/* #region start Card Styles */
+
 .card-container {
-  background-color: #FA5035;
+  background-color: #fff;
   width: 23%;
 }
-.card-image {
-  width: 100%;
+
+#boxshadow {
+  position: relative;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 10px;
 }
-.card-copy {
-  background-color: #FA5035;
-  width: 100%;
-}
+
 /* #endregion start Card Styles */
+
+
+/*Card Images and Styling*/
 
 .cardImage1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Mind01.jpeg");
@@ -149,32 +152,64 @@ h1 {
 .cardImage8 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Body03.jpeg");
 }
-.cardImage1, .cardImage2, .cardImage3, .cardImage4, .cardImage5, .cardImage6, .cardImage7, .cardImage8 {
-  background-position: center;
+
+.card-image{
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 3%;
-  padding: 6% 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+  padding: 7% 6%;
   width: 95%;
   height: 195px;
   color: #fff;
 }
-h2, h3, p, img {
+.icon-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/*Card Content Styling*/
+
+h3, h2, p, img {
+  padding: 0%;
+  margin: 0%;
+  text-align: left;
+}
+
+.card-content {
+  width: 100%;
+  margin: 2%;
   padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button{
+  margin: 2%;
+}
+
+
+button {
+  background-color: #b3cffc;
+  width: 90%;
+  height: 2%;
   margin: 0;
-}
-blockquote  {
-      width: 90%;
-    margin: auto;
+  padding: 5%;
 }
 
-blockquote p{
-      background-color: #fff;
-    opacity: .3;
-    width: 100%;
-    font-size: 1em;
+.card-content-bottom{
+  box-shadow: solid 1em #000;
+  width: 100%;
+  margin: 4%;
+  padding: 2%;
+  display: inline-block;
 }
 
+
+/*Media Queries*/
 
 
 /*media query 900
@@ -188,6 +223,6 @@ blockquote p{
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-}*/
-  
+    }*/
+
     
