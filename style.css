@@ -8,16 +8,15 @@ body {
   margin: 0;
 }
 
-/*Header Styling*/
-
 header {
   background-color: #fff;
   padding: 1.5em;
   width: 100%;
 }
 
-.nav-container {
+.main-menu {
   display: flex;
+  min-height: 54px;
 }
 
 .left-nav {
@@ -27,8 +26,6 @@ header {
 .right-nav {
   flex: 1;
 }
-
-/*Left Menu Styling*/
 
 .left-menu {
   align-items: flex-end;
@@ -45,6 +42,7 @@ header {
   line-height: 1;
   margin: 0;
   padding-right: 1em;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -57,8 +55,6 @@ a:hover {
   background-color: #7ba9f2;
   color: #fff;
 }
-
-/*Right Menu Styling*/
 
 .right-menu {
   display: flex;
@@ -85,15 +81,13 @@ a:hover {
 }
 
 .logo-container {
-  text-align: right;
+  text-align: center;
   width: 80%;
 }
 .logo {
-  border-radius: 30%;
-  width: 85%;
+  border-radius: 30%/55%;
+  width: 44%;
 }
-
-/*Main Body*/
 
 .main-content {
   padding: 0 1.5em;
@@ -113,8 +107,6 @@ h1 {
   width: 100%;
 }
 
-/* Card Styles */
-
 .card-container {
   background-color: #fff;
   margin: 1%;
@@ -126,8 +118,6 @@ h1 {
   padding: 10px;
   position: relative;
 }
-
-/*Card Images and Styling*/
 
 .card-image1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Mind01.jpeg");
@@ -177,21 +167,18 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 78%;
 }
 
 .icon-text h3 {
-  margin: 1%;
-  padding: 4%;
-  text-align: left;font-size: 1em;
+  margin: 4px;
+  font-size: 1em;
 }
 
-/*Card Content Styling*/
-
-h3,h2, p, img {
-  margin: 0;
-  padding: 0;
+h3,h2, img {
+  margin: 8px;
   text-align: left;
+  display: contents;
 }
 
 .card-content {
@@ -269,8 +256,3 @@ button {
       width: 100%;
     }
   }
-
-
-
-
-
